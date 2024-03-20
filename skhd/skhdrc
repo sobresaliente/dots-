@@ -1,0 +1,11 @@
+cmd - 1 : yabai -m query --spaces --space 1 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
+cmd - 2 : yabai -m query --spaces --space 2 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
+cmd - 3 : yabai -m query --spaces --space 3 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
+cmd - 4 : yabai -m query --spaces --space 4 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
+cmd - 5 : yabai -m query --spaces --space 5 | jq -r '.windows[0] // empty' | xargs yabai -m window --focus
+
+
+shift + alt - h : yabai -m window --swap west
+shift + alt - j : yabai -m window --swap south
+shift + alt - k : yabai -m window --swap north
+shift + alt - l : yabai -m window --swap east
